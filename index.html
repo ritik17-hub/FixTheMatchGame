@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fix The Match!</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="heading">FIX THE MATCH</h1>
+    </div>
+    <div class="header-2">
+        <h2>MATCH ALL THREE TO WIN!</h2>
+        <h4>CLICK PLAY TO START</h4>
+    </div>
+    <div id="scorecard">
+        <h3>MOVES LEFT: <span id="lives">3</span>/3</h3>
+        <h3>YOUR SCORE: <span id="scoredisplay"></span></h3>
+    </div>
+    <div class="container">
+        <div class="content" data-target="20">
+            <div class="img-div">
+                <img id="1" src="happy.png" class="img">
+            </div>
+        </div>
+        <div class="content" data-target="20">
+            <div class="img-div">
+                <img id="2" src="happy.png" class="img ">
+            </div>
+        </div>
+        <div class="content" data-target="20">
+            <div class="img-div">
+                <img id="3" src="happy.png" class="img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <h2 id="result"></h2>
+        <button id="button">PLAY</button>
+        <button id="modal" data-toggle="modal" data-target="#exampleModalCenter" class="display"></button>
+    </div>
+
+    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content modalstyle">
+            <div class="modal-header">
+              <h5 class="modal-title " id="exampleModalLongTitle">OPPS! YOU RUN OUT OF MOVES</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+                YOUR SCORE: <span id="score"></span><br>
+                HIGHEST SCORE: <span>20</span>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="location.reload()">TRY AGAIN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
